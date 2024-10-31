@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+}
+header {
+    width: 100%;
+    position: relative; /* Để cho các phần tử con có thể được định vị */
+    display: flex; /* Sử dụng Flexbox để căn giữa nội dung */
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+    justify-content: flex-start; /* Đặt các phần tử ở trên cùng */
+    margin:0;
+   
+}
+header nav ul{
+    list-style-type: none;
+}
+nav{
+    overflow: hidden;
+    background-color: #00d084;
+    z-index: 2;
+}
+#menu{
+    display:flex;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    overflow: hidden;
+    background-color: #00d084;
+    z-index: 2;
+    width:100%;
+}
+nav a{
+    display: block;
+    float: left;
+    padding :  22px;
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+}
+nav a:hover {
+    background-color: aliceblue;
+    color:red;
+}
+nav img{
+    display: block;
+    float: left;
+    width:70px;
+    padding: 0px 10px ;
+   
+}
+#mucluc{
+    display:flex;
+    padding:20px 20px 10px;
+    margin-top:60px;
+    font-size:16pt;
+    font-family: 'Times New Roman', Times, serif;
+    gap:10px;
+    background-color:rgb(242, 242, 242);
+}
+#mucluc div a{
+    text-decoration: none;
+    color:green;
+}
+#mucluc div a:hover{
+    color:red;
+}
+
+
+#container{
+    display:flex;
+    justify-content: flex-start; /* Đặt các phần tử căn về bên trái */
+    align-items: center;/*Căn giữa các phần tử con theo trục dọc của hộp flex.*/
+    padding: 20px;
+    background-color:  rgb(235, 250, 235);
+  
+}
+.anh{
+    margin-left: 30px;
+}
+.dung div{
+    width:520px;
+    font-size: 14pt;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.thong_tin{
+    margin-left: 15px;
+   
+}
+.thong_tin p{
+    font-size: 18pt;
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    padding:10px;
+    margin-left: 25px;
+  
+}
+.thong_tin li{
+    font-size:16pt;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+    font-weight: 500;
+    list-style-position: inside; /* Đưa dấu chấm vào bên trong văn bản */
+    padding-left: 25px;
+}
+
+.tatca{
+    padding:20px;
+    background-color: rgb(214, 245, 214);
+}
+#anhsothich{
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: center;     /* Căn giữa theo chiều ngang */
+    gap: 20px; /* Điều chỉnh khoảng cách giữa các ảnh */
+}
+.gioithieu{
+    padding:5px 20px 30px 30px;
+    font-size: 16pt;
+}
+.gioithieu h2{
+    margin-bottom: 10px;
+    background-color: rgb(214, 245, 214);
+    color:green;
+}
+#lienhe{
+    display: inline-flex;
+    justify-content: center;     /* Căn giữa theo chiều ngang */
+    gap: 10px; /* Điều chỉnh khoảng cách giữa các ảnh */
+    margin-left: 15px;
+}
+#lien_he{
+    padding:10px 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+#lien_he h2{
+    font-size: 16pt;
+    display: flex;
+}
+.circle-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid green;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    
+}
+.circle-icon:hover{
+    background-color: rgb(255, 230, 230);
+}
+footer{
+    padding: 20px;
+    background-color:rgb(173, 235, 173);
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bolder;
+}
